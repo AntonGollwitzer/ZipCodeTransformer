@@ -16,6 +16,10 @@ Two columns required.
 
 3) Output File: CSV file with each inputted ID and Zip Code matched to FIPS/County (one or more since Zip Codes can span across multiple bordering U.S. counties) and 250+ demographic county-level variables, for instance, county population, median income, density, 2020 Election results, etc. See Sources below for more information regarding these demographic variables.      
 
+### Issues
+
+- Please note: U.S. Zip Codes can be in multiple bordering counties (around 20% of Zip Codes go across multiple counties). To address this concern, demographic variables are averaged across the multiple counties. For instance, the Zip Code 30517 in GA, an extreme case, goes across Barrow County, Gwinnett County, Hall County, and Jackson County (4 counties). Demographic variables are thus averaged across those 4 counties for this Zip Code.   
+
 ### Sources
 
 Political demographics info from: 
