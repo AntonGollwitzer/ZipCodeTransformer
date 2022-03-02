@@ -13,7 +13,11 @@ library(stringr)
 
 #Input: 2 column csv file. Column 1: ID Column 2: Zipcode 
 
-data = read.csv("ExampleInput1.csv")
+#Example data
+#data = read.csv("ExampleInput1.csv")
+
+#Your data
+data = read.csv("YOURCSVFILEHERE.csv")
 
 zipToFip = read.csv("ZipToFips_2010-03.csv")
 
@@ -161,6 +165,8 @@ if(nrow(duplicateFips)!=0){
   data = data[order(data$ID),]  
 }
 
+#save data (example data)
+#write.csv(data, "OutputInput1.csv")
 
-#save data
-write.csv(data, "OutputInput1.csv")
+#save your output data
+write.csv(data, "YourOutputData.csv")
